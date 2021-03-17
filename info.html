@@ -15,7 +15,6 @@
       border-bottom:1px solid black;
     }
     h4 {
-      border-right:1px solid gray;
       border-bottom:1px solid gray;
       display:inline;
       width:100px;
@@ -26,6 +25,18 @@
     a {
       text-decoration:none;
     }
+    #title{
+      border-bottom:1px solid gray;
+      margin:0;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns:89px 1fr;
+    }
+    #he {
+      border-left:1px solid black;
+      width:1000px;
+    }
 
   </style>
 
@@ -33,9 +44,23 @@
 <body>
   <p><a href="https://py-html.github.io/CHUNGSO/mainpage.html"><img src="https://www.youthdaily.co.kr/data/photos/20200836/art_15988315450373_ea342d.jpg" width="200px"></a></p>
 
-  <h3 style=color:blue;>고명중학교 3-1 환경부 홈페이지</h3>
+  <h3 style="color:blue;" id="title">고명중학교 3-1 환경부 홈페이지</h3>
+  <div id="grid">
+    <div>
+      <h4><a href="https://py-html.github.io/CHUNGSO/info.html"style="color:red">공지 사항</a></h4><br><br>
+      <h4><a href="https://py-html.github.io/CHUNGSO/whattodo.html">역할 분담</a></h4>
+    </div>
+    <div id="he">
+      <h2>3/22 대청소 진행</h2>
+      <ol>
+        <li>일시: 3/22 방과후</li>
+        <li>대상: 3-1 전학생(예외 없음)</li>
+        <li>준비물: 버릴수건(걸레 가능)
+      </ol>
+    </div>
+  </div>
 
-  <h4><a href="https://py-html.github.io/CHUNGSO/info.html"style="color:red">공지 사항</a></h4><br><br>
-  <h4><a href="https://py-html.github.io/CHUNGSO/whattodo.html">역할 분담</a></h4>
+
+
 </body>
 </html>
